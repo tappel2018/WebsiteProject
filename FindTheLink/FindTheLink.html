@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/Main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+      .massive-pane {
+        width:15000px;
+        height:10000px;
+      }
+
+      .found-link {
+        position: relative;
+        left:20000px;
+        top:15000px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img class="center" src="../Images/welcometext.gif">
+    </div>
+    <div class="col-3 sidebar">
+      <div class="separator">
+      </div>
+      <a href="" class="sidebar-button">
+        <div class="sidebar-button-inner">Home
+        </div>
+      </a>
+      <a href="" class="sidebar-button-current">
+        <div class="sidebar-button-inner">Find the Link
+        </div>
+      </a>
+      <a href="" class="sidebar-button">
+        <div class="sidebar-button-inner">Search the Link
+        </div>
+      </a>
+      <a href="" class="sidebar-button">
+        <div class="sidebar-button-inner">Catch the Link
+        </div>
+      </a>
+    </div>
+    <div class="col-9">
+      <div class="scrollpane">
+        <div class="massive-pane">
+          <a class = "found-link" id="FoundLink">You found me!</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function randomize() {
+      document.getElementById("FoundLink").style.left=Math.random()*19900 + "px";
+      console.log("left");
+      document.getElementById("FoundLink").style.top=Math.random()*15900 + "px";
+      console.log("top");
+    }
+    window.onload = randomize;
+  </script>
+</html>

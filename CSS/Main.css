@@ -14,6 +14,18 @@ html, body {
     padding: 0px 0px 0px 0px;
     background: #00b3b3;
 }
+
+.scrollpane {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height: 80vh;
+
+  border-color:#00b3b3;
+  border-style: ridge;
+  border-width: 5px, 2px, 2px, 5px;
+
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -37,7 +49,11 @@ html, body {
 .col-12 {width: 100%;}
 
 .sidebar {
-  overflow: scroll;
+  overflow: auto;
+  border-width: 0px 0px 5px 0px;
+  border-color:#00b3b3;
+  border-style: ridge;
+
 }
 
 .separator {
