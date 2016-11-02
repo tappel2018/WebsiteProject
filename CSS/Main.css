@@ -1,3 +1,26 @@
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: rgba(0, 95, 95, 0.25);
+
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+  border: 7px groove #00b3b3;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 95, 95, 0.7);
+}
+
 * {
     font-family: "Comic Sans MS", cursive, sans-serif;
     box-sizing: border-box;
@@ -148,4 +171,15 @@ img.center {
 .footer {
   margin-left: auto;
   margin-right: auto;
+}
+
+.rainbow {
+  background: rgba(255,214,209,1);
+background: -moz-linear-gradient(-45deg, rgba(255,214,209,1) 0%, rgba(255,255,217,1) 20%, rgba(224,255,224,1) 40%, rgba(209,255,255,1) 60%, rgba(204,204,255,1) 81%, rgba(255,217,255,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,214,209,1)), color-stop(20%, rgba(255,255,217,1)), color-stop(40%, rgba(224,255,224,1)), color-stop(60%, rgba(209,255,255,1)), color-stop(81%, rgba(204,204,255,1)), color-stop(100%, rgba(255,217,255,1)));
+background: -webkit-linear-gradient(-45deg, rgba(255,214,209,1) 0%, rgba(255,255,217,1) 20%, rgba(224,255,224,1) 40%, rgba(209,255,255,1) 60%, rgba(204,204,255,1) 81%, rgba(255,217,255,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,214,209,1) 0%, rgba(255,255,217,1) 20%, rgba(224,255,224,1) 40%, rgba(209,255,255,1) 60%, rgba(204,204,255,1) 81%, rgba(255,217,255,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,214,209,1) 0%, rgba(255,255,217,1) 20%, rgba(224,255,224,1) 40%, rgba(209,255,255,1) 60%, rgba(204,204,255,1) 81%, rgba(255,217,255,1) 100%);
+background: linear-gradient(135deg, rgba(255,214,209,1) 0%, rgba(255,255,217,1) 20%, rgba(224,255,224,1) 40%, rgba(209,255,255,1) 60%, rgba(204,204,255,1) 81%, rgba(255,217,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd6d1', endColorstr='#ffd9ff', GradientType=1 );
 }

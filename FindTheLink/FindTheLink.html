@@ -6,12 +6,13 @@
     <title>Main Page</title>
     <style>
       .massive-pane {
-        width:15000px;
-        height:10000px;
+        width:20000px;
+        height:15000px;
+        position:relative;
       }
 
-      .found-link {
-        position: relative;
+      .found {
+        position: absolute;
         left:20000px;
         top:15000px;
       }
@@ -45,18 +46,28 @@
     </div>
     <div class="col-9">
       <div class="scrollpane">
-        <div class="massive-pane">
-          <a class = "found-link" id="FoundLink">You found me!</a>
+        <div class="massive-pane rainbow">
+          <a class = "found">You found me!</a>
+          <img class = "found" alt="Funny Image" src= "../Images/doge.jpeg">
+          <img class = "found" alt="Funny Image" src= "../Images/jiggly.jpg">
+          <img class = "found" alt="Funny Image" src= "../Images/FD8Z3w7.png">
+          <img class = "found" alt="Funny Image" src= "../Images/lonk.jpg">
+          <img class = "found" alt="Funny Image" src= "../Images/oh.jpg">
+          <img class = "found" alt="Funny Image" src= "../Images/Weegee.png">
         </div>
       </div>
     </div>
   </body>
   <script>
     function randomize() {
-      document.getElementById("FoundLink").style.left=Math.random()*19900 + "px";
-      console.log("left");
-      document.getElementById("FoundLink").style.top=Math.random()*15900 + "px";
-      console.log("top");
+      var found = document.getElementsByClassName("found");
+
+      for(var i=0; i<found.length; i++)
+      {
+         found[i].style.top = Math.random()*14000 + "px";
+         found[i].style.left = Math.random()*19000 + "px";
+      }
+
     }
     window.onload = randomize;
   </script>
