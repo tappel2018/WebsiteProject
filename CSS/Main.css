@@ -8,7 +8,9 @@
 {
   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
   background: rgba(95, 195, 195, 0.10);
-  border: 1px solid #009595;
+  border-style: solid;
+  border-width: 0px 0px 0px 2px;
+  border-color: #009595;
 
 }
 
@@ -16,6 +18,7 @@
 {
   background: rgba(0, 0, 0, 0.5);
   border: 7px groove #00b3b3;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-corner {
@@ -138,16 +141,16 @@ hr.bold {
 }
 
 .sidebar {
-  overflow: auto;
-  border-width: 5px 3px 5px 0px;
+  overflofw: auto;
+  border-width: 2px 1px 2px 0px;
+  border-style: ridge solid ridge none;
   border-color:#00b3b3;
-  border-style: ridge;
 
 }
 
 .content-main {
   background: #c6ecec;
-  border-width: 2px 2px 2px 2px;
+  border-width: 2px 0px 2px 2px;
   border-style: ridge;
   border-color: #00b3b3;
   padding: 0px 0px 7px 0px;
@@ -167,7 +170,7 @@ hr.bold {
   width: 100%;
   height: 70px;
   background-color: #ffccee;
-  border-style: solid;
+  border-style: groove;
   border-color: #00b3b3;
   border-width: 0px 0px 0px 8px;
   font-size: 24px;
@@ -183,8 +186,8 @@ hr.bold {
   width: 100%;
   height: 70px;
   background-color: #ff99dd;
-  border-style: solid;
-  border-color: #00b3b3;
+  border-style: groove;
+  border-color: #00a3a3;
   border-width: 0px 0px 0px 8px;
   font-size: 24px;
   display: block;
@@ -200,7 +203,9 @@ hr.bold {
   width: 100%;
   height: 70px;
   background-color: #00b3b3;
-  border: none;
+  border-style: groove;
+  border-color: #00b3b3;
+  border-width: 0px 0px 0px 8px;
   font-size: 24px;
   display: block;
   cursor: pointer;
@@ -214,7 +219,9 @@ hr.bold {
   width: 100%;
   height: 70px;
   background-color: #00a3a3;
-  border: none;
+  border-style: groove;
+  border-color: #00a3a3;
+  border-width: 0px 0px 0px 8px;
   font-size: 24px;
   display: block;
   cursor: pointer;
