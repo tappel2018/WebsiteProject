@@ -1,7 +1,7 @@
 ::-webkit-scrollbar
 {
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track
@@ -27,12 +27,35 @@
     box-sizing: border-box;
 }
 
+a {
+  font-size: 1.3em;
+  z-index: 1;
+}
+
+p {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.3em;
+  color: #006060;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.6em;
+  color: #006060;
+  text-decoration: underline;
+}
+
+
+
 html, body {
     margin:0;
     padding:0;
     height:100%;
     background:#acd2d2;
  }
+
 
 .header {
     margin: 0px 0px 0px 0px;
@@ -43,11 +66,11 @@ html, body {
 .scrollpane {
   overflow-x: scroll;
   overflow-y: scroll;
-  height: 80vh;
+  height: 60vh;
 
   border-color:#00b3b3;
   border-style: ridge;
-  border-width: 5px, 2px, 2px, 5px;
+  border-width: 0px 2px 2px 2px;
 
 }
 
@@ -76,7 +99,7 @@ html, body {
 .bordered {
   border-style: groove;
   border-width: 3px;
-  border-color: #009595;
+  border-color: #00b3b3;
 }
 
 hr {
@@ -85,9 +108,19 @@ hr {
   margin-bottom: 0.5em;
   margin-left: 1em;
   margin-right: 1em;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #00b3b3;
+}
+
+hr.full {
+  margin: 0.5em 0px 0.5em 0px;
   border-style: inset;
-  border-width: 2px;
   border-color: #009595;
+}
+
+hr.bold {
+  border-width:2px;
 }
 
 .sidebar {
@@ -103,7 +136,8 @@ hr {
   border-width: 2px 2px 2px 2px;
   border-style: ridge;
   border-color: #00b3b3;
-  padding: 7px 0px 7px 0px;
+  padding: 0px 0px 7px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .separator {
@@ -146,21 +180,6 @@ hr {
   text-decoration: none;
 }
 
-.sidebar-button:active {
-  position: relative;
-  width: 100%;
-  height: 70px;
-  background-color: #ff99dd;
-  border-style: solid;
-  border-color: #00b3b3;
-  border-width: 0px 0px 0px 8px;
-  font-size: 24px;
-  display: block;
-  cursor: pointer;
-  padding: none;
-  color: 	#2F847C;
-  text-decoration: none;
-}
 
 .sidebar-button-current {
   position: relative;
@@ -176,13 +195,27 @@ hr {
   text-decoration: none;
 }
 
+.sidebar-button-current:hover {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: #00a3a3;
+  border: none;
+  font-size: 24px;
+  display: block;
+  cursor: pointer;
+  padding: none;
+  color: 	#ffccee;
+  text-decoration: none;
+}
+
 .sidebar-button-inner {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 img.center {
@@ -195,9 +228,27 @@ img.center {
   height: auto;
 }
 
+.link-footer {
+  overflow: visible;
+  background: #c6ecec;
+  border-color:#00b3b3;
+  border-style: ridge;
+  border-width: 0.01px 2px 2px 2px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  height:auto;
+
+
+}
+
 .footer {
   margin-left: auto;
   margin-right: auto;
+}
+
+.centered {
+  text-align: center;
+  position: relative;
 }
 
 .rainbow {

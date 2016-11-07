@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../CSS/Main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Find The Link</title>
     <style>
       .massive-pane {
         width:20000px;
@@ -16,8 +16,6 @@
         left:20000px;
         top:15000px;
       }
-
-
     </style>
   </head>
   <body>
@@ -25,33 +23,43 @@
       <img class="center" src="../Images/welcometext.gif">
     </div>
     <div class="col-3 sidebar">
-      <a href="" class="sidebar-button">
-        <div class="sidebar-button-inner">Home
+      <a href="../index.html" class="sidebar-button">
+        <div class="sidebar-button-inner" style="height:80%;">
+          <img alt="Home" src="../Images/home.png" style="height:100%;width:auto;">
         </div>
       </a>
-      <a href="" class="sidebar-button-current">
+      <a href="#" class="sidebar-button-current">
         <div class="sidebar-button-inner">Find the Link
         </div>
       </a>
-      <a href="" class="sidebar-button">
-        <div class="sidebar-button-inner">Search the Link
-        </div>
-      </a>
-      <a href="" class="sidebar-button">
+      <a href="../catchthelink/catchthelink.html" class="sidebar-button">
         <div class="sidebar-button-inner">Catch the Link
         </div>
       </a>
     </div>
     <div class="col-9">
+      <div class="content-main">
+        <h1>Find the Link</h1>
+
+        <p>
+          Hyprelinks are&nbsp;&nbsp;tricky..Sometimes they liek to hide&nbsp;&nbsp;using pesky horizontal scrollbars. Dont let them! find the link!
+        </p>
+        <p>
+          Do not get distracted by the pictures! Find the link!</p>
+        </p>
+      </div>
       <div class="scrollpane">
         <div class="massive-pane rainbow">
-          <a class = "found">You found me!</a>
+          <a class = "found" href="Success.html">You found me!</a>
           <img class = "found" alt="Funny Image" src= "../Images/doge.jpeg">
           <img class = "found" alt="Funny Image" src= "../Images/jiggly.jpg">
           <img class = "found" alt="Funny Image" src= "../Images/FD8Z3w7.png">
           <img class = "found" alt="Funny Image" src= "../Images/lonk.jpg">
           <img class = "found" alt="Funny Image" src= "../Images/oh.jpg">
           <img class = "found" alt="Funny Image" src= "../Images/Weegee.png">
+          <img class = "found" alt="Funny Image" src= "../Images/sanic.png">
+          <img class = "found" alt="Funny Image" src= "../Images/boylookingat cocmputer.jpg">
+
         </div>
       </div>
     </div>
@@ -64,6 +72,7 @@
       {
          found[i].style.top = Math.random()*14000 + "px";
          found[i].style.left = Math.random()*19000 + "px";
+
       }
 
     }
