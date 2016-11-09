@@ -17,8 +17,8 @@
 ::-webkit-scrollbar-thumb
 {
   background: rgba(0, 0, 0, 0.5);
-  border: 7px groove #00b3b3;
-  border-radius: 4px;
+  border: 7px inset #00b3b3;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-corner {
